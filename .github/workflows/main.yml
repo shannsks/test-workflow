@@ -5,6 +5,16 @@ jobs:
   my_shannu_id:
     name: sks first job
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - name: Greeting
-        run: echo "Hello World from my first task or workflow"
+        run: "Hello World from my first task or workflow"
+
+  my_shannu2_id:
+    name: sks 2nd job
+    runs-on: windows-latest
+    needs: my_shannu_id
+    if: always()
+    steps:
+      - name: shannu
+        run: write-host "windiws workflow for test"
