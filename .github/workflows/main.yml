@@ -1,0 +1,10 @@
+name: infra setup practice
+on: workflow_dispatch
+jobs:
+  
+  my_shannu_id:
+    name: sks first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting
+        run: echo "Hello World from my first task or workflow"
