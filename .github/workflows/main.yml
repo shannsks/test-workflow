@@ -11,7 +11,7 @@ jobs:
   my_shannu_id:
     name: sks first job
     runs-on: ubuntu-latest
-    # continue-on-error: true
+    continue-on-error: true
     steps:
       - name: Greeting
         run: "Hello World from my first task or workflow"
