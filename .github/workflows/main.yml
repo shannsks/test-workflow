@@ -1,5 +1,11 @@
 name: infra setup practice
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
+      - release/*
+      - hotfix/*
+    
 jobs:
   
   my_shannu_id:
