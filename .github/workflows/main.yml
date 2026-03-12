@@ -14,7 +14,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: Greeting
-        run: "Hello World from my first task or workflow"
+        run: echo "Hello World from my first task or workflow"
 
   my_shannu2_id:
     name: sks 2nd job
