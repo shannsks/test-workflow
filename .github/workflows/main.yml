@@ -13,8 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - name: Greeting
-        run: echo "Hello World from my first task or workflow"
+     - name: Checkout code
+       uses: actions/checkout@v6.0.2
+     - name: HashiCorp - Setup Terraform
+      uses: hashicorp/setup-terraform@v2.0.3
+     - name: terraform init
+       run:  terraform init
 
   my_shannu2_id:
     name: sks 2nd job
